@@ -1,0 +1,37 @@
+# save locally then -> add->commit->push
+
+# push to master
+git push origin master
+
+# new repository
+git init
+
+# track git status 
+git status
+
+# commit
+git commit -m "description" -m "description 2"
+
+# CLOne
+git clone https://github.com/iterative/course-ds-base.git
+
+# cd
+cd course-ds-base
+
+# branch
+git branch git_basics
+git branch
+git checkout git_basics
+
+# check difference
+git diff main
+
+
+# somehow this worked to push the repository
+git remote rm origin
+git remote add origin https://github.com/jytan023/course-ds-base-1.git
+
+
+
+
+
