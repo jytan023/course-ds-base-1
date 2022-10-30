@@ -18,6 +18,8 @@ Create virtual environment named `dvc-venv` (you may use other name)
 python3 -m venv dvc-venv
 echo "export PYTHONPATH=$PWD" >> dvc-venv/bin/activate
 source dvc-venv/bin/activate
+
+powershell -ExecutionPolicy Bypass -File dvc-venv/Scripts/Activate.ps1
 ```
 Install python libraries
 
@@ -43,5 +45,6 @@ jupyter nbextension enable toc2/main
 
 ```bash
 jupyter notebook
+jupyter-lab --no-browser --port=2005 --ip=0.0.0.0
 ```
 
