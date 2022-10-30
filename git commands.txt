@@ -1,6 +1,6 @@
 # save locally then -> add->commit->push
-git push https://github.com/jytan023/course-ds-base-1
-
+git push origin HEAD:main
+git branch -a
 
 # push to master
 git push origin master
