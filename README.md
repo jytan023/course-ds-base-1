@@ -14,7 +14,10 @@ cd course-ds-base
 
 Create virtual environment named `dvc-venv` (you may use other name)
 ```bash
-// use python for windows, python3 for mac and linux
+#  use python for windows, python3 for mac and linux
+python -m venv dvc-venv
+
+# for linux or mac
 python3 -m venv dvc-venv
 echo "export PYTHONPATH=$PWD" >> dvc-venv/bin/activate
 source dvc-venv/bin/activate
@@ -46,5 +49,6 @@ jupyter nbextension enable toc2/main
 ```bash
 jupyter notebook
 jupyter-lab --no-browser --port=2005 --ip=0.0.0.0
+
 ```
 
