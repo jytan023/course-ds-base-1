@@ -19,6 +19,8 @@ python -m venv dvc-venv
 
 # for linux or mac
 python3 -m venv dvc-venv
+
+# Try these if doesn't work
 echo "export PYTHONPATH=$PWD" >> dvc-venv/bin/activate
 source dvc-venv/bin/activate
 
