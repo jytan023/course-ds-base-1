@@ -33,6 +33,9 @@ git diff main
 git remote rm origin
 git remote add origin https://github.com/jytan023/course-ds-base-1.git
 
+# git fetch to get all branch
+git fetch
+
 
 
 
