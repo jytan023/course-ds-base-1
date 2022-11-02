@@ -25,6 +25,12 @@ echo "export PYTHONPATH=$PWD" >> dvc-venv/bin/activate
 source dvc-venv/bin/activate
 
 powershell -ExecutionPolicy Bypass -File dvc-venv/Scripts/Activate.ps1
+
+# Go to powershell admin
+Set-ExecutionPolicy AllSigned
+# to deactivate venv
+deactivate
+
 ```
 Install python libraries
 
