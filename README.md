@@ -37,6 +37,9 @@ Install python libraries
 ```bash
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
+
+py -m pip install --upgrade pip setuptools wheel --no-cache-dir
+py -m pip install -r requirements.txt --no-cache-dir
 ```
 
 Add Virtual Environment to Jupyter Notebook

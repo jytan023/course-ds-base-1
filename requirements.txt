@@ -1,7 +1,8 @@
-dvc==2.8.3
-joblib==1.0.1
 jupyter
 jupyter_contrib_nbextensions
+jupyterlab
+dvc==2.8.3
+joblib==1.0.1
 matplotlib
 numpy
 pandas
@@ -11,4 +12,4 @@ pyyaml==5.4.1
 scikit-learn
 scipy
 tqdm
-jupyterlab
+
