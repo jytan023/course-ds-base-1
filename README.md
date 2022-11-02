@@ -20,13 +20,13 @@ python -m venv dvc-venv
 # for linux or mac
 python3 -m venv dvc-venv
 
-# Try these if doesn't work
+# Try these if doesn't work (did not worked)
 echo "export PYTHONPATH=$PWD" >> dvc-venv/bin/activate
 source dvc-venv/bin/activate
 
 powershell -ExecutionPolicy Bypass -File dvc-venv/Scripts/Activate.ps1
 
-# Go to powershell admin
+# Go to powershell admin (worked)
 Set-ExecutionPolicy AllSigned
 # to deactivate venv
 deactivate
