@@ -1,15 +1,18 @@
-jupyter
-jupyter_contrib_nbextensions
-jupyterlab
-dvc==2.8.3
-joblib==1.0.1
-matplotlib
-numpy
-pandas
-pytest==6.2.4
-python-box==5.4.1
-pyyaml==5.4.1
+# Install one by one cause cannot one shot install all sad
+# numpy
+# joblib
+# jupyter
+# jupyter_contrib_nbextensions
+# jupyterlab
+pygit2
+dvc
 scikit-learn
+matplotlib
+pandas
+pytest
+python-box
+pyyaml
 scipy
 tqdm
+
 
