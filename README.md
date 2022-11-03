@@ -16,6 +16,8 @@ Create virtual environment named `dvc-venv` (you may use other name)
 ```bash
 #  use python for windows, python3 for mac and linux
 python -m venv dvc-venv
+# To choose version of python
+py -3.10 -m venv dvc-venv
 
 # for linux or mac
 python3 -m venv dvc-venv
@@ -28,6 +30,11 @@ powershell -ExecutionPolicy Bypass -File dvc-venv/Scripts/Activate.ps1
 
 # Go to powershell admin (worked)
 Set-ExecutionPolicy AllSigned
+dvc-venv/Scripts/Activate.ps1
+
+# Another method
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+c:/Users/Admin/Documents/Git/course-ds-base-1/dvc-venv/Scripts/Activate.ps1
 # to deactivate venv
 deactivate
 

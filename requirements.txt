@@ -1,9 +1,9 @@
 # Install one by one cause cannot one shot install all sad
-# numpy
-# joblib
-# jupyter
-# jupyter_contrib_nbextensions
-# jupyterlab
+numpy
+joblib
+jupyter
+jupyter_contrib_nbextensions
+jupyterlab
 pygit2
 dvc
 scikit-learn
