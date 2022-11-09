@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, 'C:/Users/Admin/Documents/Git/course-ds-base-1')
+
 import argparse
 import pandas as pd
 from sklearn.model_selection import train_test_split

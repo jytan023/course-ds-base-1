@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, 'C:/Users/Admin/Documents/Git/course-ds-base-1')
+
 import itertools
 import matplotlib.colors
 import matplotlib.pyplot as plt
