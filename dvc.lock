@@ -73,10 +73,10 @@ stages:
     deps:
     - path: data/processed/train_iris.csv
       md5: ed8a7e5ba0a211251bdee6c498fe3eb4
-      size: 5724
+      size: 5845
     - path: src/stages/train.py
-      md5: 0f01f271bc8169c69ce724f19eacde07
-      size: 1371
+      md5: 007a1dfbc75a972967fe48462d4ef2ff
+      size: 1504
     params:
       params.yaml:
         base:
@@ -114,20 +114,20 @@ stages:
           model_path: models/model.joblib
     outs:
     - path: models/model.joblib
-      md5: 02ba4225f8e53d62aaa41ffdf102ea34
-      size: 2669
+      md5: 88af447fc28cca678ecc99ed04298e15
+      size: 2883
   evaluate:
     cmd: python src/stages/evaluate.py --config=params.yaml
     deps:
     - path: data/processed/test_iris.csv
       md5: b5e45593a772fc66629488e1806505c4
-      size: 1492
+      size: 1523
     - path: models/model.joblib
-      md5: 02ba4225f8e53d62aaa41ffdf102ea34
-      size: 2669
+      md5: 88af447fc28cca678ecc99ed04298e15
+      size: 2883
     - path: src/stages/evaluate.py
-      md5: e845a44aa40bffa0b20b08a7d854e999
-      size: 2358
+      md5: 4dc12a3b6ecf5d1b74abe3caee54d62d
+      size: 2517
     params:
       params.yaml:
         base:
@@ -141,7 +141,7 @@ stages:
         featurize.target_column: target
     outs:
     - path: reports/confusion_matrix.png
-      md5: 64609d4d2fe8d2718531f253d881dde6
+      md5: 6aefeabf9351745a3da7db522c4d2cde
       size: 24999
     - path: reports/metrics.json
       md5: d533847a0ca14ca93752b1b1f1df349e
