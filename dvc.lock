@@ -22,10 +22,10 @@ stages:
     deps:
     - path: data/raw/iris.csv
       md5: 4224576f0267bf88902f87f0f6200967
-      size: 2757
+      size: 2908
     - path: src/stages/featurize.py
-      md5: fa1ec29f6ff564a3e3d305aea118be81
-      size: 1292
+      md5: 03cb8918a0497358d5c5e967f69f7d52
+      size: 1420
     params:
       params.yaml:
         base:
@@ -39,7 +39,7 @@ stages:
     outs:
     - path: data/processed/featured_iris.csv
       md5: 5d03a1564b3038fc35a842f8e4bde491
-      size: 7260
+      size: 7411
   data_split:
     cmd: python src/stages/data_split.py --config=params.yaml
     deps:
@@ -73,10 +73,10 @@ stages:
     deps:
     - path: data/processed/train_iris.csv
       md5: ed8a7e5ba0a211251bdee6c498fe3eb4
-      size: 5724
+      size: 5845
     - path: src/stages/train.py
-      md5: 0f01f271bc8169c69ce724f19eacde07
-      size: 1371
+      md5: 3605f273db3c8e9aa297d9158dc4b25c
+      size: 1506
     params:
       params.yaml:
         base:
@@ -114,20 +114,20 @@ stages:
           model_path: models/model.joblib
     outs:
     - path: models/model.joblib
-      md5: 02ba4225f8e53d62aaa41ffdf102ea34
-      size: 2669
+      md5: fcad9da9c907ee0aeb5358a40d632dd0
+      size: 2883
   evaluate:
     cmd: python src/stages/evaluate.py --config=params.yaml
     deps:
     - path: data/processed/test_iris.csv
       md5: b5e45593a772fc66629488e1806505c4
-      size: 1492
+      size: 1523
     - path: models/model.joblib
-      md5: 02ba4225f8e53d62aaa41ffdf102ea34
-      size: 2669
+      md5: fcad9da9c907ee0aeb5358a40d632dd0
+      size: 2883
     - path: src/stages/evaluate.py
-      md5: e845a44aa40bffa0b20b08a7d854e999
-      size: 2358
+      md5: 5ed65de14106e859e8688de9668637e8
+      size: 3328
     params:
       params.yaml:
         base:
@@ -138,11 +138,15 @@ stages:
           reports_dir: reports
           metrics_file: metrics.json
           confusion_matrix_image: confusion_matrix.png
+          confusion_matrix_data: confusion_matrix_data.csv
         featurize.target_column: target
     outs:
     - path: reports/confusion_matrix.png
-      md5: 64609d4d2fe8d2718531f253d881dde6
-      size: 24999
+      md5: 726d58a36561a5b4b6702e58da2a193d
+      size: 25024
+    - path: reports/confusion_matrix_data.csv
+      md5: 0c4c338c5b47da4e5d4b8caf497c1b53
+      size: 604
     - path: reports/metrics.json
       md5: d533847a0ca14ca93752b1b1f1df349e
       size: 32
