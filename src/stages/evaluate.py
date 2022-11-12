@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, 'C:/Users/Admin/Documents/Git/course-ds-base-1')
+
 import argparse
 import joblib
 import json
